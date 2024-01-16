@@ -16,7 +16,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "homepage": "https://Aliaksei42.github.io/autoSite"
   },
   "eslintConfig": {
     "extends": [
@@ -41,7 +46,7 @@
     "nodemon": "^3.0.2"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
-  "author": "Aliaksei Iuko <alexivko01@gmail.com>",
+  "main": "db.js",
+  "author": "Aliaksei Iuko",
   "license": "ISC"
 }
