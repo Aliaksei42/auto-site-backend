@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs14.x",
+      "excludeFiles": ["node_modules/**/*"]
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/posts",
+      "dest": "backend/routes/post-routes.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "$1"
+    }
+  ]
+}

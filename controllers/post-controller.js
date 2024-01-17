@@ -40,7 +40,7 @@ const getPosts = (req, res) => {
       .catch((err) => handleError(res, err))  }
   
   const updatePost = (req, res) => {
-    Post.findByIdAndUpdate(req.params.id, req.body)
+    Post.findByIdAndUpdate(req.params.slug, req.body)
       .then((result) => {
         res.status(200).json(result)
       })
