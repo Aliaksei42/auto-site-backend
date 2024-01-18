@@ -1,14 +1,14 @@
 {
     "functions": {
-      "api/main.rs": {
-        "runtime": "vercel-node@3.2.0",
+      "api": {
+        "runtime": "nodejs12.x",
         "excludeFiles": "node_modules/**/*"
       }
     },
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "api/main"
+        "dest": "api/$1"
       },
       {
         "src": "/(.*)",
