@@ -12,7 +12,7 @@ const URL =
 // const URL = 'mongodb://localhost:27017/autoSite'
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://plankton-app-crfpr.ondigitalocean.app/',
   optionsSuccessStatus: 200,
   credentials: true,
 }
