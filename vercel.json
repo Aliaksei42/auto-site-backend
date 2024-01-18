@@ -1,0 +1,19 @@
+{
+    "functions": {
+      "api": {
+        "runtime": "nodejs12.x",
+        "excludeFiles": "node_modules/**/*"
+      }
+    },
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ]
+  }
+  
