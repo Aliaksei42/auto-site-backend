@@ -6,7 +6,7 @@ const cors = require('cors')
 const Post = require('./models/post')
 const postRoutes = require('./routes/post-routes')
 
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 8080
 const URL =
   'mongodb+srv://alex:Passs321@cluster0.tq2r9lo.mongodb.net/autoSite?retryWrites=true&w=majority'
 // const URL = 'mongodb://localhost:27017/autoSite'
