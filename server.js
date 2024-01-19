@@ -6,7 +6,7 @@ const cors = require('cors')
 const Post = require('./models/post')
 const postRoutes = require('./routes/post-routes')
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 1000
 const URL =
   'mongodb+srv://alex:Passs321@cluster0.tq2r9lo.mongodb.net/autoSite?retryWrites=true&w=majority'
 // const URL = 'mongodb://localhost:27017/autoSite'
@@ -18,7 +18,7 @@ const URL =
 // }
 
 const app = express()
-app.use(cors(corsOptions))
+app.use(cors());
 
 app.use(express.json())
 app.use(postRoutes)
